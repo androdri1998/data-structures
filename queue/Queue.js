@@ -11,10 +11,10 @@ class Queue {
     dequeue() {
         if(this.isEmpty()) return;
 
-        const lastItem = this.collection.get(this.firstIndex);
+        const firstItem = this.collection.get(this.firstIndex);
         this.collection.delete(this.firstIndex);
-        this.firstIndex++;
-        return lastItem;
+        this.firstIndex += 1;
+        return firstItem;
     }
     peek() {
         if(this.isEmpty()) return;
