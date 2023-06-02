@@ -42,7 +42,7 @@ describe('Queue Class test', () => {
             queue.enqueue('first');
             const item = queue.dequeue();
     
-            expect(queue.size()).toBe(0);
+            expect(queue.isEmpty()).toBe(true);
             expect(item).toBe('first');
         });
         it(`should return undefined when dequeue method is called
@@ -51,7 +51,7 @@ describe('Queue Class test', () => {
             
             const item = queue.dequeue();
     
-            expect(queue.size()).toBe(0);
+            expect(queue.isEmpty()).toBe(true);
             expect(item).toBeUndefined();
         });
     });
@@ -127,7 +127,7 @@ describe('Queue Class test', () => {
             queue.enqueue('third');
             queue.reset();
     
-            expect(queue.size()).toBe(0);
+            expect(queue.isEmpty()).toBe(true);
             expect(queue.firstIndex).toBe(0);
             expect(queue.lastIndex).toBe(0);
         });
