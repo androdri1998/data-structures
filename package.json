@@ -1,10 +1,11 @@
 {
-  "name": "queue",
+  "name": "data-structures",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "run:queue": "node queue/index.js",
+    "run:stack": "node stack/index.js",
     "test": "jest"
   },
   "keywords": [],
